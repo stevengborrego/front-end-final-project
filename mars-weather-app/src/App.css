@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.Nav {
+  display: flex;
+  align-items: center;
+}
+
+.Nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.Nav a {
+  text-decoration: none;
+  padding: .25rem;
+}
