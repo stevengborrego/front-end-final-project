@@ -1,15 +1,15 @@
 function Navbar() {
   return ( 
-  <nav className="Nav">
+  <nav className="navbar Nav">
     <ul>
       <li>
-        <a href="/">Home</a>
+        <a className="navbar-brand" href="/">Home</a>
       </li>
-      <li>
-      <a href="/weather">Weather</a>
+      <li className="nav-item">
+      <a className="nav-link" href="/weather">Weather</a>
       </li>
-      <li>
-      <a href="/photos">Photos</a>
+      <li className="nav-item">
+      <a className="nav-link" href="/photos">Photos</a>
       </li>
     </ul>
   </nav>

@@ -5,6 +5,8 @@
 .Nav {
   display: flex;
   align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
 .Nav ul {
