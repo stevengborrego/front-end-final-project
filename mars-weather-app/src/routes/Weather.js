@@ -1,6 +1,21 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+
+const url = "https://api.nasa.gov/insight_weather/?api_key=" + process.env.REACT_APP_NASA_API_KEY + "&feedtype=json&ver=1.0"
+console.log(url);
+
 function Weather() {
-  const url = "https://api.nasa.gov/insight_weather/?api_key=" + process.env.REACT_APP_NASA_API_KEY + "&feedtype=json&ver=1.0"
-  console.log(url);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      let response = await axios.get(url);
+      setData(response.data)
+    };
+    fetchData();
+  }, []);
+
+  console.log(data);
 
   return (
     <div className="container">
