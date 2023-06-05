@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./routes/Home";
-import Weather from "./routes/Weather";
+import Dashboard from "./routes/Dashboard";
 import Photos from "./routes/Photos";
 
 function Router() {
@@ -11,8 +11,8 @@ function Router() {
         <Route path="/" element={
           <Home />
         } />
-        <Route path="/weather" element={
-          <Weather />
+        <Route path="/dashboard" element={
+          <Dashboard />
         } />
         <Route path="/photos" element={
           <Photos />
