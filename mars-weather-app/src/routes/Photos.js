@@ -34,7 +34,7 @@ function Photos() {
            <Form.Group>
              <Form.Control
                type="text"
-               placeholder="Search Images"
+               placeholder="Search For Mars Rovers: Curiosity, Spirit, or opportunity"
                value={searchTerm}
                onChange={(e) => setSearchTerm(e.target.value)}
              />
